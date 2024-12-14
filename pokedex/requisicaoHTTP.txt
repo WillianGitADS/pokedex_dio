@@ -1,0 +1,52 @@
+Requisição HTTP
+_________________________________________________________________________
+URL: https://pokeapi.co/api/v2/pokemon
+    ${endereço}/${path = caminho de identificação do recurso}
+
+IP: https://pokeapi.co (transforma em IP)
+    hhtp://127.0.0.1:8080 (exemplo)
+
+path: /api/v2/pokemon(o que eu quero do servidor)
+
+Request Method : GET | POST | PUT | DELETE
+
+QUERY STRING
+
+?type=grass&name=i
+type=grass
+name=i
+
+URL: https://pokeapi.co/api/v2/pokemon?type=grass&name=i
+
+exemplo: https://pokeapi.co/api/v2/pokemon?offset=20&limit=20
+offset=20(PAGINA)
+limit=20(LIMITE POR PAGINA)
+
+HEADERS
+
+REQUEST HEADERS:
+    configuração da api
+    accept-language:
+        pt-BR,
+        pt;q=0.9
+        en-US;q=0.8
+        en;q=0.7
+    Authorization:
+    content-type: application/json
+
+RESPONSE HEADERS:
+    content-type: application/json
+
+body
+{
+    "name": "Teste"
+}
+
+_____________________________________________________________________________
+resposta do servidor
+_______________________________________________________________________________
+status code: 200 ok
+
+RESPONSE HEADERS:
+
+RESPONSE body:
